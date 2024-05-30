@@ -7,7 +7,7 @@ const Home = async () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <code className={styles.code}>{skills && skills.map((skill) => <p>{skill.label}</p>)}</code>
+        <code className={styles.code}>{skills && skills.map(({ label }: { label: string }) => <p>{label}</p>)}</code>
       </div>
     </main>
   );
