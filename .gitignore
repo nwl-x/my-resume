@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+src/backup
+axe-reports
+test-results
+playwright-report
+.next
+.env.local
+bck
