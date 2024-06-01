@@ -1,15 +1,15 @@
-import getSkills from '@/api/skills';
+// import { lazy, Suspense } from 'react'
 
-const Home = async () => {
-  const skills = await getSkills();
+// const Resume = lazy(() => import('@/components/resume/Resume'))
 
-  return (
-    <main>
-      <div>
-        <code>{skills && skills.map(({ label }: { label: string }) => <p>{label}</p>)}</code>
-      </div>
-    </main>
-  );
-};
+// const Home = () => (
+//   <Suspense fallback={<div>Loading...</div>}>
+//     <Resume />
+//   </Suspense>
+// )
 
-export default Home;
+import Resume from '@/components/resume/Resume'
+
+const Home = () => <Resume />
+
+export default Home

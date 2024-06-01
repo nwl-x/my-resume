@@ -1,0 +1,43 @@
+.infos {
+  margin-bottom: 15px;
+}
+
+.infos article {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.avatar {
+  background-color: var(--white-color);
+  border-radius: 60px;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.infos h2 {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.infos a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.infos a:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.infos p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.icon {
+  border-radius: 15px;
+  color: var(--white-color);
+  height: 13px;
+  padding: 3px 5px 0 0;
+  width: 21px;
+}

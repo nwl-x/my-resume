@@ -1,0 +1,15 @@
+.profil {
+  margin-bottom: 10px;
+}
+
+.profil h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.summary {
+  font-size: 13px;
+  text-align: justify;
+}

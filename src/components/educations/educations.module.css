@@ -1,0 +1,43 @@
+.formation {
+  margin-bottom: 10px;
+  background-color: var(--white-color);
+}
+
+.formation:last-child {
+  margin-bottom: 0;
+}
+
+.a {
+  color: var(--black-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo,
+.title,
+.icon {
+  margin-right: 5px;
+}
+
+.logo {
+  height: 18px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.icon,
+.duration {
+  font-size: 11px;
+}
+
+.desc {
+  font-size: 12px;
+  margin-left: 25px;
+}

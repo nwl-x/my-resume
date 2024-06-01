@@ -1,16 +1,25 @@
 {
   "name": "my-resume",
   "version": "0.1.0",
+  "homepage": "https://nwl-code.github.io/my-resume/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf axe-reports/* playwright-report/* || true",
+    "report": "npx playwright show-report",
+    "rgaa": "npm run clean && npx playwright test && open axe-reports"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.9.0",
+    "@playwright/test": "^1.44.0",
+    "axe-html-reporter": "^2.2.3",
     "axios": "^1.7.2",
     "babel-preset-next": "^1.4.0",
+    "mongodb": "^6.7.0",
     "next": "14.2.3",
+    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18"
