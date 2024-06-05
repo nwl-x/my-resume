@@ -17,6 +17,7 @@
     "axe-html-reporter": "^2.2.3",
     "axios": "^1.7.2",
     "babel-preset-next": "^1.4.0",
+    "dayjs": "^1.11.11",
     "mongodb": "^6.7.0",
     "next": "14.2.3",
     "normalize.css": "^8.0.1",

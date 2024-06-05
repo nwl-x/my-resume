@@ -52,11 +52,9 @@ const structure = {
         'Migration vers React ',
         'Correction de bugs',
         'Relecture de code',
-        "Intégration d'endpoints API",
-        'Compatibilité RGAA',
-        'Amélioration continue'
+        'Compatibilité RGAA'
       ],
-      highlights: ['JavaScript', 'TypeScript', 'React', 'Api Rest', 'CodeIgniter', 'PHP', 'MySQL']
+      highlights: ['javascript', 'typescript', 'react', 'php', 'mysql']
     },
     {
       company: 'Greenflex',

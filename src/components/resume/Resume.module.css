@@ -7,7 +7,7 @@
 }
 
 .content {
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   flex: 10 0;
   padding: 20px;
 }

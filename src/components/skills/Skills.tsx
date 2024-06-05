@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import Skill from '@/components/skills/Skill'
-import styles from '@/components/skills/skills.module.css'
+import styles from '@/components/skills/Skills.module.css'
 import type { Skill as SkillType } from '@/type'
 
-const Skills: FC<{ skills: SkillType[] }> = async ({ skills }) => (
+const Skills: FC<{ skills: SkillType[] }> = ({ skills }) => (
   <article className={styles.skills}>
     <h3>Compétences</h3>
 

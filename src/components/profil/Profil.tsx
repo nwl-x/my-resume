@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import type { ProfilProps } from '@/type'
-import styles from '@/components/profil/profil.module.css'
+import styles from '@/components/profil/Profil.module.css'
 
 const Profil: FC<ProfilProps> = async ({ label, summary }) => (
   <section className={styles.profil}>

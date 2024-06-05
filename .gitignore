@@ -6,3 +6,6 @@ src/backup
 .next
 .env.local
 bck
+test-results
+axe-reports
+playwright-report

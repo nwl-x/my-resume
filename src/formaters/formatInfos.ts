@@ -1,15 +1,13 @@
 import { EnvelopeFill, TelephoneFill, Linkedin, GeoAltFill, Globe2 } from 'react-bootstrap-icons'
-import type { Infos, InfosFormatted } from '@/type'
+import type { FormatInfosProps, InfosFormatted } from '@/type'
 
-const formatInfos = (infos: Infos): InfosFormatted[] => {
-  const {
-    email = '',
-    phone = '',
-    profiles = [],
-    url = ''
-    // location: { address = '', zip = '', city = '' }
-  } = infos
-
+const formatInfos = ({
+  email = '',
+  phone = '',
+  url = '',
+  profiles = [],
+  location: { address = '', zip = '', city = '' }
+}: FormatInfosProps): InfosFormatted[] => {
   return [
     {
       icon: EnvelopeFill,

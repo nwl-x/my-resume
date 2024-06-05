@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import styles from '@/components/infos/infos.module.css'
+import styles from '@/components/infos/Infos.module.css'
 import type { InfosFormatted } from '@/type'
 
 const Info: FC<InfosFormatted> = ({ icon: Icon, url, texts }) => {

@@ -3,13 +3,13 @@ import Infos from '@/components/infos/Infos'
 import Skills from '@/components/skills/Skills'
 import Educations from '@/components/educations/Educations'
 import Experiences from '@/components/experiences/Experiences'
-
 import { getResumeData } from '@/lib/api'
-import styles from '@/components/resume/resume.module.css'
+import styles from '@/components/resume/Resume.module.css'
 
 const Resume = async () => {
   const {
-    basics: { label, summary, image, firstname, lastname, email, phone, url, location, profiles },
+    basics,
+    basics: { label, summary },
     work = [],
     education = [],
     skills = []
@@ -24,7 +24,7 @@ const Resume = async () => {
       </section>
 
       <section className={styles.sidebar}>
-        <Infos image={image} fullname={`${firstname} ${lastname}`} infos={{ email, phone, url, location, profiles }} />
+        <Infos {...basics} />
         <Skills skills={skills} />
       </section>
     </main>

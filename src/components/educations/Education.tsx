@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { Link } from 'react-bootstrap-icons'
 import ImgBase64 from '@/components/ImgBase64'
 import type { Education as EducationType } from '@/type'
-import styles from '@/components/educations/educations.module.css'
+import styles from '@/components/educations/Educations.module.css'
 
 const Education: FC<EducationType> = ({ institution, description, url, image, startDate }) => (
   <article className={styles.formation}>

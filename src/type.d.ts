@@ -6,7 +6,10 @@ export type ProfilProps = {
   summary: string
 }
 
-export type Infos = {
+export type InfosProps = {
+  image: string
+  firstname: string
+  lastname: string
   email: string
   phone: string
   url: string
@@ -22,11 +25,7 @@ export type Infos = {
   }[]
 }
 
-export type InfosProps = {
-  image: string
-  fullname: string
-  infos: Infos
-}
+export type FormatInfosProps = Omit<InfosProps, 'image', 'firstname', 'lastname'>
 
 export type InfosFormatted = {
   icon: ComponentType<IconProps>

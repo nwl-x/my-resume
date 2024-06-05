@@ -41,6 +41,7 @@
 .position {
   font-size: 18px;
   font-weight: 600;
+  margin: 5px 0;
 }
 
 .duration {
@@ -53,7 +54,6 @@
   display: flex;
   font-size: 14px;
   margin-left: 2px;
-  padding-top: 5px;
 }
 
 .ul {
