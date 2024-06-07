@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getResumeDatax = async () =>
+export const getResumeData = async () =>
   await axios({
     method: 'post',
     url: 'https://eu-west-2.aws.data.mongodb-api.com/app/data-jzamnnl/endpoint/data/v1/action/find',
@@ -406,4 +406,4 @@ const structure = {
   ]
 }
 
-export const getResumeData = async () => structure
+export const getResumeDatax = async () => structure
