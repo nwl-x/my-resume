@@ -3,7 +3,7 @@ import 'dayjs/locale/fr'
 
 dayjs.locale('fr')
 
-const formatDuration = (startDate: string, endDate: string) =>
-  `De ${dayjs(startDate).format('MMM YYYY')} à ${dayjs(endDate).format('MMM YYYY')}`
+const formatDuration = (startDate: string, endDate: string, format = 'MMM YYYY') =>
+  `${dayjs(startDate).format(format)} - ${dayjs(endDate).format(format)}`
 
 export default formatDuration

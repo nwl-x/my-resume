@@ -1,0 +1,48 @@
+.article {
+  border-bottom: 1px solid var(--highlight-color);
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.article:last-child {
+  border: 0;
+}
+
+.url {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.url:hover {
+  color: var(--secondary-color);
+}
+
+.logo,
+.school,
+.icon {
+  margin-right: 5px;
+}
+
+.logo {
+  height: 15px;
+}
+
+.school {
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+.duration {
+  color: var(--grey-color);
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.desc {
+  font-size: 14px;
+  margin-left: 25px;
+}

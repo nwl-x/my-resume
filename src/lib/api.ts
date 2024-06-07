@@ -15,13 +15,18 @@ export const getResumeDatax = async () =>
     .catch((error) => console.log(error))
 
 const structure = {
+  labels: {
+    education: 'Formations',
+    experiences: 'Expériences',
+    skills: 'Compétences'
+  },
   basics: {
     label: 'Développeur JavaScript Fullstack',
     firstname: 'Jérôme',
     lastname: 'Gunst',
     image: 'avatar.png',
     email: 'j.gunst@mail.com',
-    phone: '+33 660 503 254',
+    phone: '+33 6 60 50 32 54',
     url: 'https://nwl-code.github.io/my-resume',
     summary:
       "Autodidacte, curieux, altruiste et passionné, je suis créatif et axé sur l'ergonomie dans la conception d'interfaces intuitives. Mon expérience m'a également permis de collaborer avec des équipes multidisciplinaires et de respecter les délais et les exigences projet.",
@@ -33,18 +38,21 @@ const structure = {
       countryCode: 'FR',
       url: 'https://www.google.com/maps/place/92500+Rueil-Malmaison'
     },
-    profiles: [{ network: 'Linkedin', url: 'https://www.linkedin.com/in/jerome-gunst' }]
+    profiles: [
+      { network: 'Linkedin', url: 'https://www.linkedin.com/in/jerome-gunst' },
+      { network: 'Github', url: 'https://github.com/nwl-code' }
+    ]
   },
   work: [
     {
       company: 'Whaller',
-      image: 'whaller.png',
+      image: 'fuckthemall.png',
       location: 'Suresnes',
       description: "Réseau social d'entreprise",
       position: 'Développeur Front-End',
       url: 'https://whaller.com',
       startDate: '2020-09-01',
-      endDate: '2023-10-10',
+      endDate: '2023-11-10',
       summary: '',
       realizations: [
         'Mise en place de nouvelles features',
@@ -61,7 +69,7 @@ const structure = {
       image: 'greenflex.png',
       location: 'Paris',
       description: 'Application de collecte de données d’impact écologique',
-      position: 'Lead Developeur - Scrum master',
+      position: 'Lead Developer/Scrum master',
       url: 'https://greenflex.com/',
       startDate: '2017-03-01',
       endDate: '2019-04-01',
@@ -84,7 +92,7 @@ const structure = {
       position: 'Développeur Symfony',
       url: 'https://medica.concentrix.com',
       startDate: '2013-12-01',
-      endDate: '2014-12-01',
+      endDate: '2016-12-01',
       summary: '',
       realizations: [
         'Ajout de nouvelles features',
@@ -101,7 +109,7 @@ const structure = {
       image: 'ap2s.jpeg',
       location: 'Malakoff',
       description: 'Application de billetterie en ligne',
-      position: 'Développeur PHP / Drupal',
+      position: 'Développeur PHP/Drupal',
       url: 'http://www.ap2s.fr',
       startDate: '2012',
       endDate: '2013',
@@ -169,9 +177,9 @@ const structure = {
       url: 'https://iesa.fr',
       area: 'Information Technology',
       description: '',
-      studyType: 'Bachelor',
-      startDate: '2011-06-01',
-      endDate: '2014-01-01',
+      studyType: '',
+      startDate: '2001-10-01',
+      endDate: '2002-02-01',
       image: 'iesa.png'
     }
   ],
@@ -252,16 +260,6 @@ const structure = {
           level: 0
         },
         {
-          name: 'PostgreSQL',
-          url: 'https://www.postgresql.org/',
-          level: 0
-        },
-        {
-          name: 'SQL Server',
-          url: 'https://www.microsoft.com/fr-fr/sql-server/sql-server-2022',
-          level: 0
-        },
-        {
           name: 'Symfony',
           url: 'https://symfony.com/',
           level: 0
@@ -279,11 +277,6 @@ const structure = {
         {
           name: 'Express',
           url: 'https://expressjs.com/',
-          level: 0
-        },
-        {
-          name: 'Docker',
-          url: 'https://www.docker.com/',
           level: 0
         }
       ]

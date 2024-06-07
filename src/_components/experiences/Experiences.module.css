@@ -1,0 +1,64 @@
+.article {
+  border-bottom: 1px solid var(--highlight-color);
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.article:last-child {
+  border: 0;
+}
+
+.position {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.duration {
+  color: var(--grey-color);
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.url {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.url:hover {
+  color: var(--secondary-color);
+}
+
+.logo,
+.icon,
+.company {
+  margin-right: 5px;
+}
+
+.logo {
+  height: 15px;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+.company {
+  font-size: 15px;
+}
+
+.realizations {
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.ul {
+  list-style-type: none;
+  width: 50%;
+}
+
+.li::before {
+  color: var(--highlight-color);
+  content: '• ';
+}

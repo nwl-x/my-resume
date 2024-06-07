@@ -1,4 +1,6 @@
-import { EnvelopeFill, TelephoneFill, Linkedin, GeoAltFill, Globe2 } from 'react-bootstrap-icons'
+import { EnvelopeFill, TelephoneFill, Linkedin, Github, GeoAltFill, Globe2 } from 'react-bootstrap-icons'
+
+// == TypeScript ==
 import type { FormatInfosProps, InfosFormatted } from '@/type'
 
 const formatInfos = ({
@@ -23,6 +25,11 @@ const formatInfos = ({
       icon: Linkedin,
       texts: [profiles[0]?.network],
       url: profiles[0]?.url
+    },
+    {
+      icon: Github,
+      texts: [profiles[1]?.network],
+      url: profiles[1]?.url
     },
     {
       icon: Globe2,

@@ -4,10 +4,12 @@
   height: 29.7cm;
   margin: 0.5cm auto;
   width: 21cm;
+  padding: 0;
 }
 
 .content {
   background-color: var(--primary-color);
+  background-color: var(--white-color);
   flex: 10 0;
   padding: 20px;
 }
@@ -16,5 +18,5 @@
   background-color: var(--secondary-color);
   color: var(--white-color);
   padding: 20px;
-  width: 180px;
+  width: 160px;
 }

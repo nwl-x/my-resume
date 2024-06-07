@@ -1,8 +1,9 @@
-import { FC } from 'react'
 import splitArray from '@/utils/splitArray'
+
+// == TypeScript ==
 import type { Skill as SkillType } from '@/type'
 
-const Skill: FC<SkillType> = ({ name, data }) => (
+const Skill: React.FC<SkillType> = ({ name, data }) => (
   <>
     <h4>{name}</h4>
 

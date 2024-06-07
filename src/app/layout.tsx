@@ -1,7 +1,7 @@
-import { FC, PropsWithChildren } from 'react'
 import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
-import 'normalize.css'
+
+// == CSS ==
 import '@/app/globals.css'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['100', '400'], display: 'auto' })
@@ -9,12 +9,12 @@ const roboto = Roboto({ subsets: ['latin'], weight: ['100', '400'], display: 'au
 export const metadata: Metadata = {
   title: 'Jérôme GUNST - Fullstack JavaScript developer',
   description: 'Une brève histoire de ma life',
-  manifest: './manifest.json',
-  icons: { icon: './favicon.png' }
+  manifest: 'manifest.json',
+  icons: { icon: 'favicon.png' }
 }
 
-const RootLayout: FC<PropsWithChildren> = ({ children }) => (
-  <html lang="fr" className={roboto.className}>
+const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
+  <html lang="fr">
     <body className={roboto.className}>{children}</body>
   </html>
 )

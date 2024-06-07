@@ -39,8 +39,6 @@ export const test = base.extend<AxeFixture>({
   }
 })
 
-// export { expect } from '@playwright/test'
-
 export const createReport = ({ results, reportFileName }: ReportParams) => {
   createHtmlReport({
     results,

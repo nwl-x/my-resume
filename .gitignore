@@ -2,7 +2,6 @@ node_modules
 dist
 dist-ssr
 .DS_Store
-src/backup
 .next
 .env.local
 bck
