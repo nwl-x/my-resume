@@ -3,7 +3,6 @@ import Infos from '@/components/infos/Infos'
 import Skills from '@/components/skills/Skills'
 import Educations from '@/components/educations/Educations'
 import Experiences from '@/components/experiences/Experiences'
-
 import { getResumeData } from '@/lib/api'
 
 // == CSS ==
@@ -20,18 +19,20 @@ const Resume = async () => {
   } = await getResumeData()
 
   return (
-    <main className={styles.main}>
-      <section className={styles.sidebar}>
-        <Infos {...basics} />
-        <Skills skills={skills} />
-      </section>
+    <>
+      <main className={styles.main}>
+        <aside className={styles.sidebar}>
+          <Infos {...basics} />
+          <Skills skills={skills} />
+        </aside>
 
-      <section className={styles.content}>
-        <Profil label={label} summary={summary} />
-        <Experiences works={work} label={labels.experiences} />
-        <Educations educations={education} label={labels.education} />
-      </section>
-    </main>
+        <section className={styles.content}>
+          <Profil label={label} summary={summary} />
+          <Experiences works={work} label={labels.experiences} />
+          <Educations educations={education} label={labels.education} />
+        </section>
+      </main>
+    </>
   )
 }
 

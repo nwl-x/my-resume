@@ -12,17 +12,15 @@ import styles from '@/components/experiences/Experiences.module.css'
 
 const Experience: React.FC<ExperienceType> = ({ url, image, company, position, startDate, endDate, realizations }) => (
   <article className={styles.article}>
-    <section className={styles.position}>
-      {position} <span className={styles.duration}>({formatDuration(startDate, endDate)})</span>
-    </section>
-
     <section>
       <a href={url} target="_blank" className={styles.url} rel="noopener noreferrer">
         <ImgBase64 url={image} className={styles.logo} />
-        <Link className={styles.icon} />
         <span className={styles.company}>{company}</span>
+        <Link className={styles.icon} />
+        <span className={styles.duration}>({formatDuration(startDate, endDate)})</span>
       </a>
     </section>
+    <section className={styles.position}>{position}</section>
 
     <section className={styles.realizations}>
       {splitArray(realizations).map((items, key) => (

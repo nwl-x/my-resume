@@ -35,12 +35,12 @@ const formatInfos = ({
       icon: Globe2,
       texts: ['Site web'],
       url
+    },
+    {
+      icon: GeoAltFill,
+      texts: [address, `${zip} ${city}`],
+      url: `https://www.google.com/maps/place/92500+Rueil-Malmaison`
     }
-    // {
-    //   icon: GeoAltFill,
-    //   texts: [address, `${zip} ${city}`],
-    //   url: `https://www.google.com/maps/place/92500+Rueil-Malmaison`
-    // }
   ]
 }
 

@@ -1,5 +1,11 @@
 import Resume from '@/components/resume/Resume'
 
-const Home = () => <Resume />
+const Home = () => {
+  return (
+    <>
+      <Resume />
+    </>
+  )
+}
 
 export default Home

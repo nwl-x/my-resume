@@ -27,7 +27,7 @@ const structure = {
     image: 'avatar.png',
     email: 'j.gunst@mail.com',
     phone: '+33 6 60 50 32 54',
-    url: 'https://nwl-code.github.io/my-resume',
+    url: 'https://nwl-x.github.io/my-resume',
     summary:
       "Autodidacte, curieux, altruiste et passionné, je suis créatif et axé sur l'ergonomie dans la conception d'interfaces intuitives. Mon expérience m'a également permis de collaborer avec des équipes multidisciplinaires et de respecter les délais et les exigences projet.",
     location: {
@@ -40,7 +40,7 @@ const structure = {
     },
     profiles: [
       { network: 'Linkedin', url: 'https://www.linkedin.com/in/jerome-gunst' },
-      { network: 'Github', url: 'https://github.com/nwl-code' }
+      { network: 'Github', url: 'https://github.com/nwl-x' }
     ]
   },
   work: [

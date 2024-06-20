@@ -1,7 +1,7 @@
 {
   "name": "my-resume",
   "version": "0.1.0",
-  "homepage": "https://nwl-code.github.io/my-resume/",
+  "homepage": "https://nwl-x.github.io/my-resume/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

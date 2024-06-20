@@ -1,3 +1,4 @@
+import { FC, PropsWithChildren } from 'react'
 import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   icons: { icon: 'favicon.png' }
 }
 
-const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
+const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="fr">
     <body className={roboto.className}>{children}</body>
   </html>

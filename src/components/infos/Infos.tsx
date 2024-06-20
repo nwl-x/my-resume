@@ -9,7 +9,7 @@ import type { InfosProps } from '@/type'
 // == CSS ==
 import styles from '@/components/infos/Infos.module.css'
 
-const Infos: React.FC<InfosProps> = async ({ image, firstname, lastname, email, phone, url, location, profiles }) => (
+const Infos: React.FC<InfosProps> = ({ image, firstname, lastname, email, phone, url, location, profiles }) => (
   <section className={styles.infos}>
     <article>
       <ImgBase64 url={image} className={styles.avatar} />
