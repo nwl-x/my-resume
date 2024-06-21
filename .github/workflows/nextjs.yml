@@ -28,6 +28,15 @@ jobs:
         run: |
           echo ${{ secrets.API_KEY }}
           echo "API_KEY=${{ secrets.API_KEY }}"
+
+          echo ${{ secrets.MONGODB_DATASOURCE }}
+          echo "MONGODB_DATASOURCE=${{ secrets.MONGODB_DATASOURCE }}"
+
+          echo ${{ secrets.MONGODB_DATABASE }}
+          echo "MONGODB_DATABASE=${{ secrets.MONGODB_DATABASE }}"
+
+          echo ${{ secrets.MONGODB_COLLECTION }}
+          echo "MONGODB_COLLECTION=${{ secrets.MONGODB_COLLECTION }}"
         env:
           API_KEY: ${{ secrets.API_KEY }}
           MONGODB_DATASOURCE: ${{ secrets.MONGODB_DATASOURCE }}
