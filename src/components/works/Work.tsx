@@ -5,12 +5,12 @@ import splitArray from '@/utils/splitArray'
 import formatDuration from '@/formaters/formatDuration'
 
 // == TypeScript ==
-import type { Experience as ExperienceType } from '@/type'
+import type { Work } from '@/type'
 
 // == CSS ==
-import styles from '@/components/experiences/Experiences.module.css'
+import styles from '@/components/works/works.module.css'
 
-const Experience: React.FC<ExperienceType> = ({ url, image, company, position, startDate, endDate, realizations }) => (
+const Work: React.FC<Work> = ({ url, image, company, position, startDate, endDate, realizations }) => (
   <article className={styles.article}>
     <section>
       <a href={url} target="_blank" className={styles.url} rel="noopener noreferrer">
@@ -36,4 +36,4 @@ const Experience: React.FC<ExperienceType> = ({ url, image, company, position, s
   </article>
 )
 
-export default Experience
+export default Work

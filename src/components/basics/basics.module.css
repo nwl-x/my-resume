@@ -1,35 +1,35 @@
-.infos {
+.basics {
   margin-bottom: 15px;
 }
 
-.infos article {
+.basics article {
   display: flex;
   margin-bottom: 5px;
 }
 
 .avatar {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: 60px;
   margin: 0 auto;
   width: 120px;
 }
 
-.infos h2 {
+.basics h2 {
   margin: 5px 0 20px;
   text-align: center;
 }
 
-.infos a {
+.basics a {
   color: var(--white-color);
   text-decoration: none;
 }
 
-.infos a:hover {
+.basics a:hover {
   color: var(--highlight-color);
   text-decoration: none;
 }
 
-.infos p {
+.basics p {
   font-size: 15px;
   line-height: 20px;
 }

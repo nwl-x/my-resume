@@ -6,7 +6,7 @@ import formatDuration from '@/formaters/formatDuration'
 import type { Education as EducationType } from '@/type'
 
 // == CSS ==
-import styles from '@/components/educations/Educations.module.css'
+import styles from '@/components/educations/educations.module.css'
 
 const Education: React.FC<EducationType> = ({ institution, description, url, image, startDate, endDate }) => (
   <article className={styles.article}>

@@ -1,7 +1,7 @@
 {
-  "labels": { "education": "Formations", "experiences": "Expériences", "skills": "Compétences" },
+  "labels": { "education": "Formations", "works": "Expériences", "skills": "Compétences" },
   "basics": {
-    "label": "Développeur JavaScript Fullstack",
+    "label": "Développeur Web Fullstack",
     "firstname": "Jérôme",
     "lastname": "Gunst",
     "image": "avatar.png",
@@ -33,14 +33,7 @@
       "startDate": "2020-09-01",
       "endDate": "2023-11-10",
       "summary": "",
-      "realizations": [
-        "Mise en place de nouvelles features",
-        "Développement de librairies",
-        "Migration vers React ",
-        "Correction de bugs",
-        "Relecture de code",
-        "Compatibilité RGAA"
-      ],
+      "realizations": [],
       "highlights": ["javascript", "typescript", "react", "php", "mysql"]
     },
     {
@@ -53,14 +46,7 @@
       "startDate": "2017-03-01",
       "endDate": "2019-04-01",
       "summary": "",
-      "realizations": [
-        "Ajout de composant React",
-        "Migration vers AWS",
-        "Documentation technique",
-        "Diffusion de bonnes pratiques",
-        "Animation des rituels Scrum",
-        "Partage de connaissance"
-      ],
+      "realizations": [],
       "highlights": ["JavaScript", " React", " Symfony", " Neo4j", " Redis"]
     },
     {
@@ -68,19 +54,12 @@
       "image": "directmedica.png",
       "location": "Boulogne-Billancourt",
       "description": "Application de parcours santé",
-      "position": "Développeur Symfony",
+      "position": "Développeur Symfony/Node.js",
       "url": "https://medica.concentrix.com",
       "startDate": "2013-12-01",
       "endDate": "2016-12-01",
       "summary": "",
-      "realizations": [
-        "Ajout de nouvelles features",
-        "Revue de code",
-        "Migration SVN vers Git",
-        "Maintenance et correction de bugs",
-        "Assistance aux utilisateurs",
-        "Migration Symfony 1.4 vers 3.0"
-      ],
+      "realizations": [],
       "highlights": ["Symfony", " SQL Server", " NodeJS", " JQuery", " Twig"]
     },
     {
@@ -190,9 +169,9 @@
       "name": "Back-End",
       "data": [
         { "name": "PHP", "url": "https://www.php.net/", "level": 0 },
+        { "name": "Symfony", "url": "https://symfony.com/", "level": 0 },
         { "name": "Mysql", "url": "https://www.mysql.com/fr/", "level": 0 },
         { "name": "MongoDB", "url": "https://www.mongodb.com/fr-fr", "level": 0 },
-        { "name": "Symfony", "url": "https://symfony.com/", "level": 0 },
         { "name": "Node.js", "url": "https://nodejs.org/en", "level": 0 },
         { "name": "NextJs", "url": "https://nextjs.org/", "level": 0 },
         { "name": "Express", "url": "https://expressjs.com/", "level": 0 }
@@ -202,13 +181,12 @@
       "name": "Tests et qualité",
       "data": [
         { "name": "Jest", "url": "https://jestjs.io/fr/", "level": 0 },
-        { "name": "Mocha", "url": "https://mochajs.org/", "level": 0 },
         { "name": "Cypress", "url": "https://www.cypress.io/", "level": 0 },
         { "name": "Playwright", "url": "https://playwright.dev/", "level": 0 },
+        { "name": "PHPUnit", "url": "https://phpunit.de/index.html", "level": 0 },
         { "name": "Eslint", "url": "https://eslint.org/", "level": 0 },
         { "name": "Prettier", "url": "https://prettier.io/", "level": 0 },
-        { "name": "Sonar", "url": "https://sonar.software/", "level": 0 },
-        { "name": "PHPUnit", "url": "https://phpunit.de/index.html", "level": 0 }
+        { "name": "Sonar", "url": "https://sonar.software/", "level": 0 }
       ]
     },
     {

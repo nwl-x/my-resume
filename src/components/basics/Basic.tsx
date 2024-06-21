@@ -1,10 +1,10 @@
 // == TypeScript ==
-import type { InfosFormatted } from '@/type'
+import type { BasicsFormatted } from '@/type'
 
 // == CSS ==
-import styles from '@/components/infos/Infos.module.css'
+import styles from '@/components/basics/basics.module.css'
 
-const Info: React.FC<InfosFormatted> = ({ icon: Icon, url, texts }) => {
+const Basic: React.FC<BasicsFormatted> = ({ icon: Icon, url, texts }) => {
   const myText = texts.map((text, key) => <p key={key}>{text}</p>)
 
   return (
@@ -26,4 +26,4 @@ const Info: React.FC<InfosFormatted> = ({ icon: Icon, url, texts }) => {
   )
 }
 
-export default Info
+export default Basic

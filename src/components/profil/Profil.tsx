@@ -2,7 +2,7 @@
 import type { ProfilProps } from '@/type'
 
 // == CSS ==
-import styles from '@/components/profil/Profil.module.css'
+import styles from '@/components/profil/profil.module.css'
 
 const Profil: React.FC<ProfilProps> = ({ label, summary }) => (
   <section className={styles.profil}>

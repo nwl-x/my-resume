@@ -1,12 +1,13 @@
-import Profil from '@/components/profil/Profil'
-import Infos from '@/components/infos/Infos'
+import Basics from '@/components/basics/Basics'
 import Skills from '@/components/skills/Skills'
+import Profil from '@/components/profil/Profil'
+import Works from '@/components/works/Works'
 import Educations from '@/components/educations/Educations'
-import Experiences from '@/components/experiences/Experiences'
-import { getResumeData } from '@/lib/api'
+
+import { getResumeDataFromJson as getResume } from '@/lib/api'
 
 // == CSS ==
-import styles from '@/components/resume/Resume.module.css'
+import styles from '@/components/resume/resume.module.css'
 
 const Resume = async () => {
   const {
@@ -16,19 +17,19 @@ const Resume = async () => {
     work = [],
     education = [],
     skills = []
-  } = await getResumeData()
+  } = await getResume()
 
   return (
     <>
       <main className={styles.main}>
         <aside className={styles.sidebar}>
-          <Infos {...basics} />
-          <Skills skills={skills} />
+          <Basics {...basics} />
+          <Skills skills={skills} label={labels.skills} />
         </aside>
 
         <section className={styles.content}>
           <Profil label={label} summary={summary} />
-          <Experiences works={work} label={labels.experiences} />
+          <Works works={work} label={labels.works} />
           <Educations educations={education} label={labels.education} />
         </section>
       </main>
