@@ -1,5 +1,5 @@
-import { ComponentType } from 'react'
-import { IconProps } from 'react-bootstrap-icons'
+import type { ComponentType } from 'react'
+import type { IconProps } from 'react-bootstrap-icons'
 
 export type Basics = {
   label: string
@@ -23,8 +23,6 @@ export type Basics = {
     url: string
   }[]
 }
-
-// ==
 
 export type Work = {
   company: string
