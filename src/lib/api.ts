@@ -10,12 +10,7 @@ export const getResumeFromDb = async () =>
       'Access-Control-Request-Headers': '*',
       'api-key': process.env.API_KEY
     },
-    // data: JSON.stringify({ dataSource: 'Cluster0', database: 'resume', collection: 'structure' })
-    data: JSON.stringify({
-      dataSource: process.env.MONGODB_DATASOURCE,
-      database: process.env.MONGODB_DATABASE,
-      collection: process.env.MONGODB_COLLECTION
-    })
+    data: JSON.stringify({ dataSource: 'Cluster0', database: 'resume', collection: 'structure' })
   })
     .then(({ data }) => data?.documents[0])
     .catch((error) => console.log(error))

@@ -16,7 +16,8 @@ const {
 
 export const metadata: Metadata = {
   title: `${firstname} ${lastname} - ${label}`,
-  manifest: 'manifest.json'
+  manifest: 'manifest.json',
+  icons: { icon: './favicon.ico' }
 }
 
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
