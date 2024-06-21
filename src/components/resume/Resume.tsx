@@ -4,8 +4,11 @@ import Profil from '@/components/profil/Profil'
 import Works from '@/components/works/Works'
 import Educations from '@/components/educations/Educations'
 
-// import { getResumeDataFromJson as getResume } from '@/lib/api'
-import { getResumeFromDb as getResume } from '@/lib/api'
+// == Do: Load Datas From JSON ==
+import { getResumeDataFromJson as getResume } from '@/lib/api'
+
+// == Or: Load Datas From Database ==
+// import { getResumeFromDb as getResume } from '@/lib/api'
 
 // == CSS ==
 import styles from '@/components/resume/resume.module.css'
