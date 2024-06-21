@@ -22,7 +22,6 @@ body {
 @media print {
   body,
   main {
-    box-shadow: 0;
     margin: 0 !important;
     padding: 0 !important;
   }
