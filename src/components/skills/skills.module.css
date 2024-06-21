@@ -1,9 +1,4 @@
 .skills h3 {
-  font-size: 24px;
-  text-align: center;
-}
-
-.skills h4 {
   border-bottom: 2px solid var(--highlight-color);
   font-size: 16px;
   padding: 10px 0 2px 0;

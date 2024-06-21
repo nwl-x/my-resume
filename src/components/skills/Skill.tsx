@@ -5,7 +5,7 @@ import type { Skill as SkillType } from '@/type'
 
 const Skill: React.FC<SkillType> = ({ name, data }) => (
   <>
-    <h4>{name}</h4>
+    <h3>{name}</h3>
 
     <section>
       {splitArray(data).map((items, key) => (
