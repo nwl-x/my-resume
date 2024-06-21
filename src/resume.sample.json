@@ -1,0 +1,77 @@
+{
+  "labels": { "education": "", "works": "", "skills": "" },
+  "basics": {
+    "label": "",
+    "firstname": "",
+    "lastname": "",
+    "image": "",
+    "email": "",
+    "phone": "",
+    "url": "",
+    "summary": "",
+    "location": {
+      "address": "",
+      "zip": "",
+      "city": "",
+      "country": "",
+      "countryCode": "",
+      "url": ""
+    },
+    "profiles": [{ "network": "", "url": "" }]
+  },
+  "work": [
+    {
+      "company": "",
+      "image": "",
+      "location": "",
+      "description": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "realizations": [],
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    { "organization": "", "position": "", "url": "", "startDate": "", "endDate": "", "summary": "", "highlights": [] }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "url": "",
+      "area": "",
+      "description": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "image": ""
+    }
+  ],
+  "awards": [{ "title": "", "date": "", "awarder": "", "summary": "" }],
+  "publications": [{ "name": "", "publisher": "", "releaseDate": "", "url": "", "summary": "" }],
+  "skills": [
+    {
+      "name": "",
+      "data": [{ "name": "", "url": "", "level": 0 }]
+    }
+  ],
+  "languages": [{ "language": "", "fluency": "" }],
+  "interests": [{ "name": "", "keywords": [] }],
+  "references": [{ "name": "", "reference": "" }],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "highlights": [],
+      "keywords": [],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": [],
+      "entity": "",
+      "type": ""
+    }
+  ]
+}
