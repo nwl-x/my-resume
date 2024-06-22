@@ -155,14 +155,12 @@
           "level": 0
         },
         { "name": "TypeScript", "url": "https://www.typescriptlang.org/", "level": 0 },
-        { "name": "JQuery", "url": "https://jquery.com/", "level": 0 },
         { "name": "React", "url": "https://fr.react.dev/", "level": 0 },
         { "name": "Redux", "url": "https://redux.js.org/", "level": 0 },
         { "name": "HTML", "url": "https://developer.mozilla.org/fr/docs/Web/HTML", "level": 0 },
         { "name": "CSS", "url": "https://developer.mozilla.org/fr/docs/web/CSS", "level": 0 },
         { "name": "BootStrap", "url": "https://getbootstrap.com/", "level": 0 },
-        { "name": "Sass", "url": "https://sass-lang.com/", "level": 0 },
-        { "name": "Handlebars", "url": "https://handlebarsjs.com/", "level": 0 }
+        { "name": "Sass", "url": "https://sass-lang.com/", "level": 0 }
       ]
     },
     {
@@ -185,7 +183,6 @@
         { "name": "Playwright", "url": "https://playwright.dev/", "level": 0 },
         { "name": "PHPUnit", "url": "https://phpunit.de/index.html", "level": 0 },
         { "name": "Eslint", "url": "https://eslint.org/", "level": 0 },
-        { "name": "Prettier", "url": "https://prettier.io/", "level": 0 },
         { "name": "Sonar", "url": "https://sonar.software/", "level": 0 }
       ]
     },
@@ -193,7 +190,6 @@
       "name": "Compilation",
       "data": [
         { "name": "Webpack", "url": "https://webpack.js.org/", "level": 0 },
-        { "name": "Grunt", "url": "https://gruntjs.com/", "level": 0 },
         { "name": "Babel", "url": "https://babeljs.io/", "level": 0 },
         { "name": "Vite", "url": "https://vitejs.dev/", "level": 0 }
       ]
