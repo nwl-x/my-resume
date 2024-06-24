@@ -6,7 +6,7 @@ const imgUrlToBase64 = (url: string): Promise<FileReader['result']> =>
       const reader = new FileReader()
 
       reader.onloadend = () => resolve(reader.result)
-      reader.readAsDataURL(xhr.response)
+      reader.readAsDataURL(xhr.response as Blob)
     }
 
     xhr.open('GET', `images/${url}`)

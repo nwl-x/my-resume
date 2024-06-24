@@ -25,7 +25,7 @@ const formatBasics = (basics: FormatBasicsProps): BasicsFormatted[] => {
     },
     {
       icon: GeoAltFill,
-      texts: [`${zip} ${city}`],
+      texts: [address, `${zip} ${city}`],
       url: `https://www.google.com/maps/place/92500+Rueil-Malmaison`
     },
     {
