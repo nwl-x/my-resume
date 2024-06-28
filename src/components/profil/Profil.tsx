@@ -1,14 +1,11 @@
+import { FC } from 'react'
+
 // == TypeScript ==
 import type { ProfilProps } from '@/type'
 
-// == CSS ==
-import styles from '@/components/profil/profil.module.css'
-
-const Profil: React.FC<ProfilProps> = ({ label, summary }) => (
-  <section className={styles.profil}>
-    <h1>{label}</h1>
-
-    <article className={styles.summary}>{summary}</article>
+const Profil: FC<ProfilProps> = ({ label }) => (
+  <section>
+    <h1 className="mb-2 mt-2 text-center text-3xl font-bold">{label}</h1>
   </section>
 )
 

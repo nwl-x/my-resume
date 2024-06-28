@@ -1,11 +1,6 @@
-// @ts-check
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
   images: {
     unoptimized: true
   },
   reactStrictMode: true
 }
-
-module.exports = nextConfig

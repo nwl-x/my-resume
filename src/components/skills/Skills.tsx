@@ -1,16 +1,15 @@
+import { FC } from 'react'
+
 import Skill from '@/components/skills/Skill'
 
 // == TypeScript ==
 import type { SkillsProps } from '@/type'
 
-// == CSS ==
-import styles from '@/components/skills/skills.module.css'
-
-const Skills: React.FC<SkillsProps> = ({ skills, label }) => (
+const Skills: FC<SkillsProps> = ({ skills, label }) => (
   <>
-    <h2>{label}</h2>
+    <h2 className="mb-0 mt-3 text-xl">{label}</h2>
 
-    <article className={styles.skills}>
+    <article>
       {skills.map((skill, key) => (
         <Skill key={key} {...skill} />
       ))}

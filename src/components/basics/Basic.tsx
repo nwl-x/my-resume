@@ -1,28 +1,31 @@
+import { FC } from 'react'
+
 // == TypeScript ==
 import type { BasicsFormatted } from '@/type'
 
-// == CSS ==
-import styles from '@/components/basics/basics.module.css'
+const Basic: FC<BasicsFormatted> = ({ icon: Icon, url, texts }) => {
+  const content = (
+    <>
+      <section className="mr-2 mt-1 h-4 w-4">{Icon && <Icon />}</section>
 
-const Basic: React.FC<BasicsFormatted> = ({ icon: Icon, url, texts }) => {
-  const myText = texts.map((text, key) => <p key={key}>{text}</p>)
+      <section>
+        {texts.map((text, key) => (
+          <p key={key}>{text}</p>
+        ))}
+      </section>
+    </>
+  )
 
   return (
-    <article>
-      <section>
-        <Icon className={styles.icon} />
-      </section>
-
-      <section>
-        {url ? (
-          <a href={url} target="_blank">
-            {myText}
-          </a>
-        ) : (
-          myText
-        )}
-      </section>
-    </article>
+    <section className="flex hover:text-green">
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" className="flex">
+          {content}
+        </a>
+      ) : (
+        content
+      )}
+    </section>
   )
 }
 

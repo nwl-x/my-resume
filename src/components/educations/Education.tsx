@@ -1,23 +1,26 @@
+import { FC } from 'react'
+
 import { Link } from 'react-bootstrap-icons'
+
 import ImgBase64 from '@/components/ImgBase64'
 import formatDuration from '@/formaters/formatDuration'
 
 // == TypeScript ==
 import type { Education as EducationType } from '@/type'
 
-// == CSS ==
-import styles from '@/components/educations/educations.module.css'
+const Education: FC<EducationType> = ({ institution, description, url, image, startDate, endDate }) => (
+  <article className="border-b-2 border-green pb-2 text-sm last:border-0">
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <ImgBase64 url={image} className="mr-2 inline-block h-4 w-4 align-middle" />
 
-const Education: React.FC<EducationType> = ({ institution, description, url, image, startDate, endDate }) => (
-  <article className={styles.article}>
-    <a href={url} className={styles.url} target="_blank" rel="noopener noreferrer">
-      <ImgBase64 url={image} className={styles.logo} />
-      <span className={styles.school}>{institution}</span>
-      <Link className={styles.icon} />
-      <span className={styles.duration}>({formatDuration(startDate, endDate)})</span>
+      <span className="inline-block align-middle">{institution}</span>
+
+      <Link className="ml-1 mr-1 inline-block align-middle text-[0.78rem]" />
+
+      <span className="inline-block align-middle text-[0.7rem]">({formatDuration(startDate, endDate)})</span>
     </a>
 
-    <section className={styles.desc}>{description}</section>
+    <section>{description}</section>
   </article>
 )
 

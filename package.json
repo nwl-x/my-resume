@@ -1,6 +1,7 @@
 {
   "name": "my-resume",
   "version": "0.1.0",
+  "type": "module",
   "homepage": "https://nwl-x.github.io/my-resume/",
   "scripts": {
     "dev": "next dev",
@@ -9,12 +10,10 @@
     "lint": "next lint",
     "clean": "rm -rf axe-reports/* playwright-report/* || true",
     "report": "npx playwright show-report",
-    "rgaa": "npm run clean && npx playwright test && open axe-reports"
+    "rgaa": "npm run clean && npx playwright test && open axe-reports",
+    "css": "npx tailwindcss -i ./src/app/input.css -o ./src/app/main.css --watch"
   },
   "dependencies": {
-    "@axe-core/playwright": "^4.9.0",
-    "@playwright/test": "^1.44.0",
-    "axe-html-reporter": "^2.2.3",
     "axios": "^1.7.2",
     "babel-preset-next": "^1.4.0",
     "dayjs": "^1.11.11",
@@ -22,22 +21,29 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "mongodb": "^6.7.0",
     "next": "14.2.4",
-    "pdf-parse": "^1.1.1",
-    "prettier": "^3.3.2",
     "react": "^18",
     "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18",
     "react-refresh": "^0.14.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.9.0",
+    "@playwright/test": "^1.44.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
+    "autoprefixer": "^10.4.19",
+    "axe-html-reporter": "^2.2.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
-    "typescript": "^5"
+    "pdf-parse": "^1.1.1",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
   }
 }

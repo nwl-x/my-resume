@@ -1,30 +1,11 @@
-import { Roboto } from 'next/font/google'
-import structure from '@/resume.json'
-
-// == TypeScript ==
-import type { Metadata } from 'next'
-import type { Structure } from '@/type'
+import { FC } from 'react'
 
 // == CSS ==
-import '@/app/globals.css'
+import '@/app/main.css'
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['100', '400'], display: 'auto' })
-
-const {
-  basics: { label, firstname, lastname }
-} = structure satisfies Structure
-
-export const metadata: Metadata = {
-  title: `${firstname} ${lastname} - ${label}`,
-  description: 'manifest.json',
-  keywords: ['javascript', 'typescript', 'react', 'php', 'mysql'],
-  manifest: 'manifest.json',
-  icons: { icon: './favicon.ico' }
-}
-
-const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <html lang="fr">
-    <body className={roboto.className}>{children}</body>
+const RootLayout: FC<React.PropsWithChildren> = ({ children }) => (
+  <html lang="fr" className="font-display" suppressHydrationWarning>
+    <body className="print:m-0 print:max-h-[29.7cm] print:max-w-[21cm] print:p-0">{children}</body>
   </html>
 )
 

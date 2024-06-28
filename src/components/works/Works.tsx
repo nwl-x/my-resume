@@ -1,16 +1,15 @@
+import { FC } from 'react'
+
 import Work from '@/components/works/Work'
 
 // == TypeScript ==
 import type { WorksProps } from '@/type'
 
-// == CSS ==
-import styles from '@/components/works/works.module.css'
-
-const Works: React.FC<WorksProps> = ({ works, label }) => (
+const Works: FC<WorksProps> = ({ works, label }) => (
   <>
-    <h2>{label}</h2>
+    <h2 className="mb-3 mt-3 text-2xl">{label}</h2>
 
-    <article className={styles.works}>
+    <article className="grid gap-3">
       {works.map((work, key) => (
         <Work key={key} {...work} />
       ))}

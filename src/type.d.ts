@@ -8,7 +8,6 @@ export type Basics = {
   image: string
   email: string
   phone: string
-  url: string
   summary: string
   location: {
     address: string
@@ -116,6 +115,7 @@ export type Structure = {
     education: string
     works: string
     skills: string
+    contact: string
   }
   basics: Basics
   work: Work[]
@@ -139,7 +139,6 @@ export type SkillsProps = {
 
 export type ProfilProps = {
   label: string
-  summary: string
 }
 
 export type WorksProps = {
@@ -157,7 +156,7 @@ export type EducationsProps = {
 export type FormatBasicsProps = Omit<Basics, 'label' | 'firstname' | 'lastname' | 'image' | 'summary'>
 
 export type BasicsFormatted = {
-  icon: ComponentType<IconProps>
+  icon: ComponentType<IconProps> | null
   url: string
   texts: string[]
 }
