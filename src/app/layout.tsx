@@ -1,26 +1,3 @@
-//             _@@@@@g__          __g@@@@@_
-//            @@      "B@p,    ,o@B"      Q@
-//           j@          "@@__@@"          @@
-//           @@            ]@@[            @@
-//           @@          _@@ `@@_          @@
-//           !@,        g@"_____@g         @|
-//            @@~g@@@@@@BBBBBBBBBB@@@@@@gag@
-//       _g@@B4@,    j@"          '@g    `@P8@@g_
-//    _@@>     0@   @@    __~~__    @@   @@     "B@a
-//  _@P         @@_@W   ,@@@@@@@@_   %@_g@         \@L
-//  @F           @@P    @@@@@@@@@@    t@@           |@,
-//  @@          ,@@g    @@@@@@@@@@    j@@,          g@
-//   \@g_       @W @@   `@@@@@@@@'   g@ V@       _o@P
-//     '0@@___ @@   Q@     """"     @@   @@ ___@@B"
-//         '<0@@@gg__@@L___________@@__gg@@@B>"
-//            @W   '""<@@BBBBBBBB@@>"""   [@
-//           |@         t@_    _@P         @1
-//           @@           @@__@@           @@
-//           @@            2@@[            @@
-//           [@          _@B'`Q@_          @N
-//            @@_    __@@P      <@@__    ,@@
-//             "8@@@@P"            "4@@@@B"
-
 import { Roboto } from 'next/font/google'
 import structure from '@/resume.json'
 
@@ -39,6 +16,8 @@ const {
 
 export const metadata: Metadata = {
   title: `${firstname} ${lastname} - ${label}`,
+  description: 'manifest.json',
+  keywords: ['javascript', 'typescript', 'react', 'php', 'mysql'],
   manifest: 'manifest.json',
   icons: { icon: './favicon.ico' }
 }

@@ -14,6 +14,8 @@ import { getResumeDataFromJson as getResume } from '@/lib/api'
 import styles from '@/components/resume/resume.module.css'
 
 const Resume = async () => {
+  const resume = await getResume()
+
   const {
     labels,
     basics,
@@ -21,10 +23,11 @@ const Resume = async () => {
     work = [],
     education = [],
     skills = []
-  } = await getResume()
+  } = resume
 
   return (
     <>
+      <div style={{ display: 'none' }}>{JSON.stringify(resume)}</div>
       <main className={styles.main}>
         <aside className={styles.sidebar}>
           <Basics {...basics} />
