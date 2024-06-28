@@ -1,5 +1,5 @@
 {
-  "labels": { "education": "", "works": "", "skills": "" },
+  "labels": { "education": "", "works": "", "skills": "", "contact": "" },
   "basics": {
     "label": "",
     "firstname": "",
@@ -7,7 +7,6 @@
     "image": "",
     "email": "",
     "phone": "",
-    "url": "",
     "summary": "",
     "location": {
       "address": "",
