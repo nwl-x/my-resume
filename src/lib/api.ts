@@ -1,5 +1,5 @@
 import axios, { AxiosResponse, AxiosRequestConfig, RawAxiosRequestHeaders, AxiosInstance } from 'axios'
-import structure from '@/resume.json'
+import structure from '@/resume.sample.json'
 import structureDefault from '@/resume.sample.json'
 
 // == TypeScript ==
