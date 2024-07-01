@@ -1,95 +1,101 @@
 import type { ComponentType } from 'react'
 import type { IconProps } from 'react-bootstrap-icons'
 
+export type location = {
+  address: string
+  city: string
+  country: string
+  countryCode: string
+  url: string
+  zip: string
+}
+
+export type Profiles = {
+  network: string
+  url: string
+}
+
 export type Basics = {
-  label: string
-  firstname: string
-  lastname: string
-  image: string
   email: string
+  firstname: string
+  image: string
+  label: string
+  lastname: string
+  location: location
   phone: string
+  profiles: Profiles[]
   summary: string
-  location: {
-    address: string
-    zip: string
-    city: string
-    country: string
-    countryCode: string
-    url: string
-  }
-  profiles: {
-    network: string
-    url: string
-  }[]
 }
 
 export type Work = {
   company: string
+  description: string
+  endDate: string
+  highlights: string[]
   image: string
   location: string
-  description: string
   position: string
-  url: string
-  startDate: string
-  endDate: string
-  summary: string
   realizations: string[]
-  highlights: string[]
+  startDate: string
+  summary: string
+  url: string
 }
 
 export type Volunteer = {
+  endDate: string
+  highlights: string[]
   organization: string
   position: string
-  url: string
   startDate: string
-  endDate: string
   summary: string
-  highlights: string[]
+  url: string
 }
 
 export type Education = {
-  institution: string
-  url: string
   area: string
   description: string
-  studyType: string
-  startDate: string
   endDate: string
   image: string
+  institution: string
+  startDate: string
+  studyType: string
+  url: string
 }
 
 export type Awards = {
-  title: string
-  date: string
   awarder: string
+  date: string
   summary: string
+  title: string
 }
 
 export type Publications = {
   name: string
   publisher: string
   releaseDate: string
-  url: string
   summary: string
+  url: string
+}
+
+export type SkillData = {
+  level: number
+  name: string
+  url?: string
 }
 
 export type Skill = {
   name: string
-  data: {
-    name: string
-    url?: string
-    level: number
-  }[]
+  data: SkillData[]
 }
 
 export type Languages = {
-  language: string
   fluency: string
+  language: string
 }
 
 export type Interests = {
-  name: string
   keywords: string[]
+  name: string
 }
 
 export type References = {
@@ -98,25 +104,27 @@ export type References = {
 }
 
 export type Projects = {
-  name: string
   description: string
+  endDate: string
+  entity: string
   highlights: string[]
   keywords: string[]
-  startDate: string
-  endDate: string
-  url: string
+  name: string
   roles: string[]
-  entity: string
+  startDate: string
   type: string
+  url: string
+}
+
+export type Labels = {
+  contact: string
+  education: string
+  skills: string
+  works: string
 }
 
 export type Structure = {
-  labels: {
-    education: string
-    works: string
-    skills: string
-    contact: string
-  }
+  labels: Labels
   basics: Basics
   work: Work[]
   volunteer: Volunteer[]
@@ -147,16 +155,16 @@ export type WorksProps = {
 }
 
 export type EducationsProps = {
-  label: string
   educations: Education[]
+  label: string
 }
 
 // == Misc ==
 
-export type FormatBasicsProps = Omit<Basics, 'label' | 'firstname' | 'lastname' | 'image' | 'summary'>
+export type FormatBasicsProps = Omit<Basics, 'firstname' | 'image' | 'label' | 'lastname' | 'summary'>
 
 export type BasicsFormatted = {
   icon: ComponentType<IconProps> | null
-  url: string
   texts: string[]
+  url: string
 }

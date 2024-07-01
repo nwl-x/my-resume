@@ -20,15 +20,15 @@ const Work: FC<Work> = ({ company, image, description, position, url, startDate,
 
         <span className="inline-block align-middle">{company}</span>
 
-        <Link className="ml-1 mr-1 inline-block align-middle text-[0.78rem]" />
+        <Link className="ml-1 mr-1 hidden align-middle text-[0.78rem] md:inline-block" />
 
-        <span className="inline-block align-middle text-[0.7rem]">({description})</span>
+        <span className="hidden align-middle text-[0.7rem] md:inline-block">({description})</span>
       </a>
     </section>
 
-    <section className="flex items-center align-middle">
-      <span className="mr-1 text-xl text-blue">{position}</span>
-      <span className="text-[0.7rem]">- ({formatDuration(startDate, endDate)})</span>
+    <section className="items-center align-middle md:flex">
+      <p className="mr-1 text-blue md:text-xl">{position}</p>
+      <p className="text-[0.7rem] md:ml-1">({formatDuration(startDate, endDate)})</p>
     </section>
 
     <section className="flex flex-wrap gap-2">
