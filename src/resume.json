@@ -48,7 +48,7 @@
       "position": "Lead Developer/Scrum master",
       "url": "https://greenflex.com/",
       "startDate": "2017-03-01",
-      "endDate": "2019-04-01",
+      "endDate": "2020-04-01",
       "summary": "",
       "realizations": [
         "Animation des cérémonials Scrum et diffusion de bonnes pratiques.",
@@ -80,8 +80,8 @@
       "description": "Application de billetterie en ligne",
       "position": "Développeur PHP/Drupal",
       "url": "http://www.ap2s.fr",
-      "startDate": "2012",
-      "endDate": "2013",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
       "summary": "",
       "realizations": [
         "Ajout de modules Drupal de paiement au tunnel d'achat.",
@@ -96,8 +96,8 @@
       "description": "Site e-commerce",
       "position": "Ingénieur Étude et Développement",
       "url": "https://www.pixmania.com/fr/fr/",
-      "startDate": "2011",
-      "endDate": "2012",
+      "startDate": "2011-02-01",
+      "endDate": "2011-12-01",
       "summary": "",
       "realizations": ["Maintenance de l'application Pixmania en PHP/JavaScript/MySQL."],
       "highlights": ["PHP", "Oracle", "JavaScript Vanilla"]
@@ -109,8 +109,8 @@
       "description": "Communication et événementiel",
       "position": "Développeur Fullstack",
       "url": "https://www.marquetis.fr/",
-      "startDate": "2009",
-      "endDate": "2011",
+      "startDate": "2009-02-01",
+      "endDate": "2011-01-01",
       "summary": "",
       "realizations": ["Création de mailings marketing et de sites institutionnels."],
       "highlights": ["PHP", "MySQL", "JavaScript Vanilla", "JQuery", "CodeIgniter"]
@@ -122,8 +122,8 @@
       "description": "Société de services",
       "position": "Consultant informatique",
       "url": "https://www.unisys.com/fr/",
-      "startDate": "2006",
-      "endDate": "2008",
+      "startDate": "2006-02-01",
+      "endDate": "2008-12-01",
       "summary": "",
       "realizations": [
         "Audit de projets informatiques et contrôle qualité auprès du groupement d'achats des magasins E.Leclerc."
@@ -137,8 +137,8 @@
       "description": "Site de recrutement en ligne",
       "position": "Webmaster",
       "url": "https://www.thestepstonegroup.com/en/",
-      "startDate": "2001",
-      "endDate": "2006",
+      "startDate": "2001-01-01",
+      "endDate": "2006-01-01",
       "summary": "",
       "realizations": ["Développement et maintenance d'une plateforme de recrutement en ligne."],
       "highlights": ["PHP", "MySQL", "JavaScript Vanilla"]

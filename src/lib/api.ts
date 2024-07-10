@@ -1,11 +1,11 @@
 import axios, { AxiosResponse, AxiosRequestConfig, RawAxiosRequestHeaders, AxiosInstance } from 'axios'
-// import structure from '@/resume.sample.json'
-import structureDefault from '@/resume.sample.json'
+import structure from '@/resume.json'
+// import structureDefault from '@/resume.sample.json'
 
 // == TypeScript ==
 import type { Structure } from '@/type'
 
-// export const getResumeDataFromJson = () => structure satisfies Structure
+export const getResumeDataFromJson = () => structure satisfies Structure
 
 export const getResumeFromMongoDB = async (): Promise<Structure> => {
   const url = 'https://eu-west-2.aws.data.mongodb-api.com/app/data-jzamnnl/endpoint/data/v1/action/find'
@@ -31,10 +31,10 @@ export const getResumeFromMongoDB = async (): Promise<Structure> => {
       }
     }
 
-    return structureDefault
+    return structure
   } catch (err: unknown) {
     console.log(err instanceof Error ? err.message : err)
 
-    return structureDefault
+    return structure
   }
 }
