@@ -20,15 +20,6 @@ const Resume = async () => {
       <div className="hidden">{JSON.stringify(resume)}</div>
 
       <main className="h-48 min-h-[29.7cm] font-display md:flex md:min-w-[21cm]">
-        <aside className="h-full bg-blue p-4 text-sm text-white md:w-56">
-          <section className="md:hidden">
-            <Profil label={basics.label} />
-          </section>
-
-          <Basics {...basics} label={labels.contact} />
-          <Skills skills={skills} label={labels.skills} />
-        </aside>
-
         <section className="p-3 text-black md:flex-1">
           <section className="hidden md:block">
             <Profil label={basics.label} />
@@ -36,6 +27,14 @@ const Resume = async () => {
           <Works works={work} label={labels.works} />
           <Educations educations={education} label={labels.education} />
         </section>
+
+        <aside className="h-full bg-slate-500 p-4 text-sm text-white md:w-56">
+          <section className="md:hidden">
+            <Profil label={basics.label} />
+          </section>
+          <Basics {...basics} label={labels.contact} />
+          <Skills skills={skills} label={labels.skills} />
+        </aside>
       </main>
     </>
   )

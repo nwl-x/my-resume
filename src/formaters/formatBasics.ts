@@ -21,27 +21,27 @@ const formatBasics = (basics: FormatBasicsProps): BasicsFormatted[] => {
       icon: TelephoneFill,
       texts: [phone],
       url: `tel:${phone}`
-    },
+    }
     // {
     //   icon: GeoAltFill,
     //   texts: [address, `${zip} ${city}`],
     //   url: `https://www.google.com/maps/place/92500+Rueil-Malmaison`
     // },
-    {
-      icon: Globe2,
-      texts: [profiles[0]?.network],
-      url: profiles[0]?.url
-    },
-    {
-      icon: Linkedin,
-      texts: [profiles[1]?.network],
-      url: profiles[1]?.url
-    },
-    {
-      icon: Github,
-      texts: [profiles[2]?.network],
-      url: profiles[2]?.url
-    }
+    // {
+    //   icon: Globe2,
+    //   texts: [profiles[0]?.network],
+    //   url: profiles[0]?.url
+    // },
+    // {
+    //   icon: Linkedin,
+    //   texts: [profiles[1]?.network],
+    //   url: profiles[1]?.url
+    // },
+    // {
+    //   icon: Github,
+    //   texts: [profiles[2]?.network],
+    //   url: profiles[2]?.url
+    // }
   ]
 }
 
