@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .clip-bubble {
+    clip-path: polygon(20px 20px, 20px 0px, 0px 20px);
+  }
+}
