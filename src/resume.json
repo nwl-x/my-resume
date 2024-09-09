@@ -1,7 +1,7 @@
 {
   "labels": { "education": "Formations", "works": "Expériences", "skills": "Compétences", "contact": "Contact" },
   "basics": {
-    "label": "Développeur Web Fullstack",
+    "label": "Développeur Front-end",
     "firstname": "Jérôme",
     "lastname": "Gunst",
     "image": "avatar.png",
@@ -34,9 +34,10 @@
       "endDate": "2023-11-10",
       "summary": "",
       "realizations": [
-        "Développement de modules (Centre de notifications, Cartes de lien, upload de fichiers).",
-        "Migration de JavaScript Vanilla vers TypeScript et suppression des librairies jQuery.",
-        "Réduction du backlog de tickets de bug de plus de 300 tickets à moins de 20."
+        "Réalisation de modules (Centre de notifications, Cartes de lien, upload de fichiers)",
+        "Migration de JavaScript Vanilla vers TypeScript et suppression des librairies jQuery",
+        "Réduction du backlog de tickets de bug de plus de 300 tickets à moins de 20",
+        "Réduction de la dette technique"
       ],
       "highlights": ["Javascript", "Typescript", "React", "PHP", "MySQL"]
     },
@@ -45,15 +46,15 @@
       "image": "greenflex.png",
       "location": "Paris",
       "description": "Application de collecte de données d’impact écologique",
-      "position": "Lead Developer/Scrum master",
+      "position": "Lead développeur/Scrum master",
       "url": "https://greenflex.com/",
       "startDate": "2017-03-01",
       "endDate": "2020-04-01",
       "summary": "",
       "realizations": [
-        "Animation des cérémonials Scrum et diffusion de bonnes pratiques.",
-        "Montée en compétence des développeurs sur React et NextJs.",
-        "Relecture de code, refactoring et optimisation de performances."
+        "Animation des cérémonials Scrum et diffusion de bonnes pratiques",
+        "Montée en compétence des développeurs sur React, Symfony, Neo4j et Redis",
+        "Relecture de code, refactoring et optimisation de performances"
       ],
       "highlights": ["JavaScript", " React", " Symfony", " Neo4j", " Redis"]
     },
@@ -62,14 +63,15 @@
       "image": "directmedica.png",
       "location": "Boulogne-Billancourt",
       "description": "Application de parcours santé",
-      "position": "Développeur Symfony/Node.js",
+      "position": "Lead développeur Symfony/Node.js",
       "url": "https://medica.concentrix.com",
       "startDate": "2013-12-01",
       "endDate": "2016-12-01",
       "summary": "",
       "realizations": [
-        "Développement d'une application de parcours santé en Symfony/Twig/SQL Server.",
-        "Développement d'une application \"temps réel\" de formation de professionnels de santé en NodeJS / MySQL."
+        "Développement d'une application de parcours santé en Symfony/Twig/SQL Server",
+        "Développement d'une application \"temps réel\" de formation en NodeJS/MySQL",
+        "Mise en place d'un tracking de bugs (Mantis)"
       ],
       "highlights": ["Symfony", " SQL Server", " NodeJS", " JQuery", " Twig"]
     },
@@ -84,8 +86,9 @@
       "endDate": "2013-01-01",
       "summary": "",
       "realizations": [
-        "Ajout de modules Drupal de paiement au tunnel d'achat.",
-        "Développement de la feature de choix \"à la place\" lors de l'achat de billets."
+        "Ajout de modules Drupal de paiement au tunnel d'achat",
+        "Développement de la feature de choix \"à la place\" lors de l'achat de billets",
+        "Maintenance d'un sous-projet en CodeIgniter"
       ],
       "highlights": ["ZendFramework", "CodeIgniter", "Drupal", "SOAP", "JQuery", "SVN", "MySQL"]
     },
@@ -99,7 +102,11 @@
       "startDate": "2011-02-01",
       "endDate": "2011-12-01",
       "summary": "",
-      "realizations": ["Maintenance de l'application Pixmania en PHP/JavaScript/MySQL."],
+      "realizations": [
+        "Maintenance de l'application Pixmania en PHP/JavaScript/MySQL",
+        "Amélioration de la navigation par catégorie de produit (UCMS)",
+        "Correction de bug"
+      ],
       "highlights": ["PHP", "Oracle", "JavaScript Vanilla"]
     },
     {
@@ -112,7 +119,10 @@
       "startDate": "2009-02-01",
       "endDate": "2011-01-01",
       "summary": "",
-      "realizations": ["Création de mailings marketing et de sites institutionnels."],
+      "realizations": [
+        "Création de mailings marketing et de sites institutionnels",
+        "Développement du nouveau site \"Les Taxis Bleus\""
+      ],
       "highlights": ["PHP", "MySQL", "JavaScript Vanilla", "JQuery", "CodeIgniter"]
     },
     {
@@ -126,7 +136,8 @@
       "endDate": "2008-12-01",
       "summary": "",
       "realizations": [
-        "Audit de projets informatiques et contrôle qualité auprès du groupement d'achats des magasins E.Leclerc."
+        "Audit de projets informatiques et contrôle qualité (E.Leclerc)",
+        "Mise en place de tests d'interface graphique et de fonctionnalité (Selenium)"
       ],
       "highlights": ["PHP", "MySQL", "Oracle", "Selenium"]
     },
@@ -140,7 +151,10 @@
       "startDate": "2001-01-01",
       "endDate": "2006-01-01",
       "summary": "",
-      "realizations": ["Développement et maintenance d'une plateforme de recrutement en ligne."],
+      "realizations": [
+        "Développement et maintenance d'une plateforme de recrutement en ligne",
+        "Réalisation d'un backoffice de gestion de la cvthèque"
+      ],
       "highlights": ["PHP", "MySQL", "JavaScript Vanilla"]
     }
   ],
@@ -196,16 +210,15 @@
       ]
     },
     {
-      "name": "Tests et qualité",
+      "name": "Test et qualité",
       "data": [
         { "name": "Jest", "url": "https://jestjs.io/fr/", "level": 0 },
-        { "name": "Sonar", "url": "https://sonar.software/", "level": 0 },
+        { "name": "Eslint", "url": "https://eslint.org/", "level": 0 },
 
         { "name": "Cypress", "url": "https://www.cypress.io/", "level": 0 },
-        { "name": "PHPUnit", "url": "https://phpunit.de/index.html", "level": 0 },
 
-        { "name": "Playwright", "url": "https://playwright.dev/", "level": 0 },
-        { "name": "Eslint", "url": "https://eslint.org/", "level": 0 }
+        { "name": "Sonar", "url": "https://sonar.software/", "level": 0 },
+        { "name": "Playwright", "url": "https://playwright.dev/", "level": 0 }
       ]
     },
     {
@@ -219,6 +232,16 @@
 
         { "name": "Git", "url": "https://git-scm.com/", "level": 0 },
         { "name": "Bitbucket", "url": "https://bitbucket.org/", "level": 0 }
+      ]
+    },
+    {
+      "name": "Veille technologique",
+      "data": [
+        { "name": "Daily.dev", "url": "https://daily.dev/fr-fr", "level": 0 },
+        { "name": "Medium", "url": "https://medium.com/", "level": 0 },
+
+        { "name": "dev.to", "url": "https://dev.to/", "level": 0 },
+        { "name": "freecodecamp", "url": "https://www.freecodecamp.org/", "level": 0 }
       ]
     }
   ],
