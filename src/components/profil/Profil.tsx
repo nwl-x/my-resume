@@ -4,7 +4,8 @@ import { FC } from 'react'
 import type { ProfilProps } from '@/type'
 
 const Profil: FC<ProfilProps> = ({ label }) => (
-  <section className="mb-2 mt-2 text-center text-lg font-bold md:block md:text-3xl">
+  // Titre
+  <section className="pb-5 pt-5 text-center text-2xl font-bold tracking-wider text-white md:block md:text-4xl">
     <h1>{label}</h1>
   </section>
 )

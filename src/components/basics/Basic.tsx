@@ -16,7 +16,18 @@ const Basic: FC<BasicsFormatted> = ({ icon: Icon, url, texts }) => {
     </>
   )
 
-  return <section className="block md:flex">{content}</section>
+  return (
+    <section className="block hover:text-green md:flex">
+      {' '}
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" className="flex">
+          {content}
+        </a>
+      ) : (
+        content
+      )}
+    </section>
+  )
 }
 
 export default Basic

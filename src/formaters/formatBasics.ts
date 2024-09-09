@@ -1,4 +1,5 @@
 import { EnvelopeFill, TelephoneFill, Linkedin, Github, Globe2 } from 'react-bootstrap-icons'
+// import { EnvelopeFill, TelephoneFill, Linkedin, Github, Globe2, GeoAltFill } from 'react-bootstrap-icons'
 
 // == TypeScript ==
 import type { FormatBasicsProps, BasicsFormatted } from '@/type'
@@ -21,7 +22,7 @@ const formatBasics = (basics: FormatBasicsProps): BasicsFormatted[] => {
       icon: TelephoneFill,
       texts: [phone],
       url: `tel:${phone}`
-    }
+    },
     // {
     //   icon: GeoAltFill,
     //   texts: [address, `${zip} ${city}`],
@@ -32,16 +33,16 @@ const formatBasics = (basics: FormatBasicsProps): BasicsFormatted[] => {
     //   texts: [profiles[0]?.network],
     //   url: profiles[0]?.url
     // },
-    // {
-    //   icon: Linkedin,
-    //   texts: [profiles[1]?.network],
-    //   url: profiles[1]?.url
-    // },
-    // {
-    //   icon: Github,
-    //   texts: [profiles[2]?.network],
-    //   url: profiles[2]?.url
-    // }
+    {
+      icon: Linkedin,
+      texts: [profiles[1]?.network],
+      url: profiles[1]?.url
+    },
+    {
+      icon: Github,
+      texts: [profiles[2]?.network],
+      url: profiles[2]?.url
+    }
   ]
 }
 

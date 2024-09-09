@@ -9,9 +9,11 @@ const Skill: FC<SkillType> = ({ name, data }) => (
 
     <section className="flex flex-wrap gap-2">
       <ul className="w-full">
-        {data.map(({ name }, key) => (
+        {data.map(({ name, url }, key) => (
           <li key={key} className="inline-flex w-1/2 before:mr-1 before:text-white before:content-['\2022']">
-            {name}
+            <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-green">
+              {name}
+            </a>
           </li>
         ))}
       </ul>
