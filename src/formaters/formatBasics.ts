@@ -1,4 +1,4 @@
-import { EnvelopeFill, TelephoneFill, Linkedin, Github, Globe2 } from 'react-bootstrap-icons'
+import { EnvelopeFill, TelephoneFill, Linkedin, Github } from 'react-bootstrap-icons'
 // import { EnvelopeFill, TelephoneFill, Linkedin, Github, Globe2, GeoAltFill } from 'react-bootstrap-icons'
 
 // == TypeScript ==
