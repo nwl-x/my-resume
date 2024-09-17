@@ -5,10 +5,10 @@ import Works from '@/components/works/Works'
 // import Educations from '@/components/educations/Educations'
 
 // == Do: Load Datas From JSON ==
-import { getResumeDataFromJson as getResume } from '@/lib/api'
+// import { getResumeDataFromJson as getResume } from '@/lib/api'
 
 // == Or: Load Datas From Database ==
-// import { getResumeFromMongoDB as getResume } from '@/lib/api'
+import { getResumeFromMongoDB as getResume } from '@/lib/api'
 
 const Resume = async () => {
   const resume = await getResume()
